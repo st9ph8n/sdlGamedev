@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/TextureManager.hpp
+SDL2/SDL.h
+-
+SDL2/SDL_image.h
+-
+map
+-
+res_path.h
+../include/res_path.h
+
+../include/game.hpp
+SDL2/SDL.h
+-
+TextureManager.hpp
+../include/TextureManager.hpp
+SDL2/SDL_image.h
+-
+
+../include/res_path.h
+iostream
+-
+string
+-
+SDL2/SDL.h
+-
+
+/home/stephen/Documents/mathprograms/sdlGamedev/chapter2/src/main.cpp
+iostream
+-
+SDL2/SDL.h
+-
+SDL2/SDL_error.h
+-
+SDL2/SDL_image.h
+-
+game.hpp
+/home/stephen/Documents/mathprograms/sdlGamedev/chapter2/src/game.hpp
+

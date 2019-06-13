@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wall -Wextra -pedantic -std=c++11  -shared -Wl,-soname,libgamelib.so -o libgamelib.so CMakeFiles/gamelib.dir/__/include/game.cpp.o 
