@@ -1,0 +1,1 @@
+/usr/bin/g++-5 -fPIC  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g  -shared -Wl,-soname,libplayerlib.so -o libplayerlib.so CMakeFiles/playerlib.dir/__/include/player.cpp.o 

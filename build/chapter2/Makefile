@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/stephen/Documents/mathprograms/sdlGamedev/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -80,28 +68,17 @@ install/local/fast: preinstall/fast
 	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -123,6 +100,29 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,19 +157,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-chapter2/CMakeFiles/gamelib.dir/rule:
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f CMakeFiles/Makefile2 chapter2/CMakeFiles/gamelib.dir/rule
-.PHONY : chapter2/CMakeFiles/gamelib.dir/rule
+chapter2/CMakeFiles/sdlgamelib.dir/rule:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f CMakeFiles/Makefile2 chapter2/CMakeFiles/sdlgamelib.dir/rule
+.PHONY : chapter2/CMakeFiles/sdlgamelib.dir/rule
 
 # Convenience name for target.
-gamelib: chapter2/CMakeFiles/gamelib.dir/rule
+sdlgamelib: chapter2/CMakeFiles/sdlgamelib.dir/rule
 
-.PHONY : gamelib
+.PHONY : sdlgamelib
 
 # fast build rule for target.
-gamelib/fast:
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/gamelib.dir/build.make chapter2/CMakeFiles/gamelib.dir/build
-.PHONY : gamelib/fast
+sdlgamelib/fast:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/sdlgamelib.dir/build.make chapter2/CMakeFiles/sdlgamelib.dir/build
+.PHONY : sdlgamelib/fast
+
+# Convenience name for target.
+chapter2/CMakeFiles/gameobjlib.dir/rule:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f CMakeFiles/Makefile2 chapter2/CMakeFiles/gameobjlib.dir/rule
+.PHONY : chapter2/CMakeFiles/gameobjlib.dir/rule
+
+# Convenience name for target.
+gameobjlib: chapter2/CMakeFiles/gameobjlib.dir/rule
+
+.PHONY : gameobjlib
+
+# fast build rule for target.
+gameobjlib/fast:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/gameobjlib.dir/build.make chapter2/CMakeFiles/gameobjlib.dir/build
+.PHONY : gameobjlib/fast
 
 # Convenience name for target.
 chapter2/CMakeFiles/chapter2.dir/rule:
@@ -201,6 +216,51 @@ texturelib/fast:
 	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/texturelib.dir/build.make chapter2/CMakeFiles/texturelib.dir/build
 .PHONY : texturelib/fast
 
+# Convenience name for target.
+chapter2/CMakeFiles/playerlib.dir/rule:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f CMakeFiles/Makefile2 chapter2/CMakeFiles/playerlib.dir/rule
+.PHONY : chapter2/CMakeFiles/playerlib.dir/rule
+
+# Convenience name for target.
+playerlib: chapter2/CMakeFiles/playerlib.dir/rule
+
+.PHONY : playerlib
+
+# fast build rule for target.
+playerlib/fast:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/playerlib.dir/build.make chapter2/CMakeFiles/playerlib.dir/build
+.PHONY : playerlib/fast
+
+# Convenience name for target.
+chapter2/CMakeFiles/enemylib.dir/rule:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f CMakeFiles/Makefile2 chapter2/CMakeFiles/enemylib.dir/rule
+.PHONY : chapter2/CMakeFiles/enemylib.dir/rule
+
+# Convenience name for target.
+enemylib: chapter2/CMakeFiles/enemylib.dir/rule
+
+.PHONY : enemylib
+
+# fast build rule for target.
+enemylib/fast:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/enemylib.dir/build.make chapter2/CMakeFiles/enemylib.dir/build
+.PHONY : enemylib/fast
+
+# Convenience name for target.
+chapter2/CMakeFiles/gamelib.dir/rule:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f CMakeFiles/Makefile2 chapter2/CMakeFiles/gamelib.dir/rule
+.PHONY : chapter2/CMakeFiles/gamelib.dir/rule
+
+# Convenience name for target.
+gamelib: chapter2/CMakeFiles/gamelib.dir/rule
+
+.PHONY : gamelib
+
+# fast build rule for target.
+gamelib/fast:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/gamelib.dir/build.make chapter2/CMakeFiles/gamelib.dir/build
+.PHONY : gamelib/fast
+
 __/include/TextureManager.o: __/include/TextureManager.cpp.o
 
 .PHONY : __/include/TextureManager.o
@@ -228,6 +288,33 @@ __/include/TextureManager.cpp.s:
 	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/texturelib.dir/build.make chapter2/CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.s
 .PHONY : __/include/TextureManager.cpp.s
 
+__/include/enemy.o: __/include/enemy.cpp.o
+
+.PHONY : __/include/enemy.o
+
+# target to build an object file
+__/include/enemy.cpp.o:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/enemylib.dir/build.make chapter2/CMakeFiles/enemylib.dir/__/include/enemy.cpp.o
+.PHONY : __/include/enemy.cpp.o
+
+__/include/enemy.i: __/include/enemy.cpp.i
+
+.PHONY : __/include/enemy.i
+
+# target to preprocess a source file
+__/include/enemy.cpp.i:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/enemylib.dir/build.make chapter2/CMakeFiles/enemylib.dir/__/include/enemy.cpp.i
+.PHONY : __/include/enemy.cpp.i
+
+__/include/enemy.s: __/include/enemy.cpp.s
+
+.PHONY : __/include/enemy.s
+
+# target to generate assembly for a file
+__/include/enemy.cpp.s:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/enemylib.dir/build.make chapter2/CMakeFiles/enemylib.dir/__/include/enemy.cpp.s
+.PHONY : __/include/enemy.cpp.s
+
 __/include/game.o: __/include/game.cpp.o
 
 .PHONY : __/include/game.o
@@ -254,6 +341,87 @@ __/include/game.s: __/include/game.cpp.s
 __/include/game.cpp.s:
 	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/gamelib.dir/build.make chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.s
 .PHONY : __/include/game.cpp.s
+
+__/include/gameobject.o: __/include/gameobject.cpp.o
+
+.PHONY : __/include/gameobject.o
+
+# target to build an object file
+__/include/gameobject.cpp.o:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/gameobjlib.dir/build.make chapter2/CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.o
+.PHONY : __/include/gameobject.cpp.o
+
+__/include/gameobject.i: __/include/gameobject.cpp.i
+
+.PHONY : __/include/gameobject.i
+
+# target to preprocess a source file
+__/include/gameobject.cpp.i:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/gameobjlib.dir/build.make chapter2/CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.i
+.PHONY : __/include/gameobject.cpp.i
+
+__/include/gameobject.s: __/include/gameobject.cpp.s
+
+.PHONY : __/include/gameobject.s
+
+# target to generate assembly for a file
+__/include/gameobject.cpp.s:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/gameobjlib.dir/build.make chapter2/CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.s
+.PHONY : __/include/gameobject.cpp.s
+
+__/include/player.o: __/include/player.cpp.o
+
+.PHONY : __/include/player.o
+
+# target to build an object file
+__/include/player.cpp.o:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/playerlib.dir/build.make chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o
+.PHONY : __/include/player.cpp.o
+
+__/include/player.i: __/include/player.cpp.i
+
+.PHONY : __/include/player.i
+
+# target to preprocess a source file
+__/include/player.cpp.i:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/playerlib.dir/build.make chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.i
+.PHONY : __/include/player.cpp.i
+
+__/include/player.s: __/include/player.cpp.s
+
+.PHONY : __/include/player.s
+
+# target to generate assembly for a file
+__/include/player.cpp.s:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/playerlib.dir/build.make chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.s
+.PHONY : __/include/player.cpp.s
+
+__/include/sdlgameobj.o: __/include/sdlgameobj.cpp.o
+
+.PHONY : __/include/sdlgameobj.o
+
+# target to build an object file
+__/include/sdlgameobj.cpp.o:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/sdlgamelib.dir/build.make chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o
+.PHONY : __/include/sdlgameobj.cpp.o
+
+__/include/sdlgameobj.i: __/include/sdlgameobj.cpp.i
+
+.PHONY : __/include/sdlgameobj.i
+
+# target to preprocess a source file
+__/include/sdlgameobj.cpp.i:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/sdlgamelib.dir/build.make chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.i
+.PHONY : __/include/sdlgameobj.cpp.i
+
+__/include/sdlgameobj.s: __/include/sdlgameobj.cpp.s
+
+.PHONY : __/include/sdlgameobj.s
+
+# target to generate assembly for a file
+__/include/sdlgameobj.cpp.s:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/sdlgamelib.dir/build.make chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.s
+.PHONY : __/include/sdlgameobj.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -288,21 +456,37 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... rebuild_cache"
-	@echo "... gamelib"
-	@echo "... install"
+	@echo "... sdlgamelib"
+	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... gameobjlib"
 	@echo "... chapter2"
 	@echo "... texturelib"
+	@echo "... playerlib"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... enemylib"
+	@echo "... gamelib"
+	@echo "... rebuild_cache"
 	@echo "... __/include/TextureManager.o"
 	@echo "... __/include/TextureManager.i"
 	@echo "... __/include/TextureManager.s"
+	@echo "... __/include/enemy.o"
+	@echo "... __/include/enemy.i"
+	@echo "... __/include/enemy.s"
 	@echo "... __/include/game.o"
 	@echo "... __/include/game.i"
 	@echo "... __/include/game.s"
+	@echo "... __/include/gameobject.o"
+	@echo "... __/include/gameobject.i"
+	@echo "... __/include/gameobject.s"
+	@echo "... __/include/player.o"
+	@echo "... __/include/player.i"
+	@echo "... __/include/player.s"
+	@echo "... __/include/sdlgameobj.o"
+	@echo "... __/include/sdlgameobj.i"
+	@echo "... __/include/sdlgameobj.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

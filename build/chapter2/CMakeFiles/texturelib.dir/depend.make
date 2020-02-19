@@ -3,5 +3,5 @@
 
 chapter2/CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.o: ../include/TextureManager.cpp
 chapter2/CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.o: ../include/TextureManager.hpp
-chapter2/CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.o: ../include/res_path.h
+chapter2/CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.o: ../include/res_path.hpp
 

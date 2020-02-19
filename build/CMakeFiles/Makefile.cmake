@@ -55,7 +55,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "chapter2/CMakeFiles/gamelib.dir/DependInfo.cmake"
+  "chapter2/CMakeFiles/sdlgamelib.dir/DependInfo.cmake"
+  "chapter2/CMakeFiles/gameobjlib.dir/DependInfo.cmake"
   "chapter2/CMakeFiles/chapter2.dir/DependInfo.cmake"
   "chapter2/CMakeFiles/texturelib.dir/DependInfo.cmake"
+  "chapter2/CMakeFiles/playerlib.dir/DependInfo.cmake"
+  "chapter2/CMakeFiles/enemylib.dir/DependInfo.cmake"
+  "chapter2/CMakeFiles/gamelib.dir/DependInfo.cmake"
   )

@@ -157,17 +157,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named gamelib
+# Target rules for targets named sdlgamelib
 
 # Build rule for target.
-gamelib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gamelib
-.PHONY : gamelib
+sdlgamelib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sdlgamelib
+.PHONY : sdlgamelib
 
 # fast build rule for target.
-gamelib/fast:
-	$(MAKE) -f chapter2/CMakeFiles/gamelib.dir/build.make chapter2/CMakeFiles/gamelib.dir/build
-.PHONY : gamelib/fast
+sdlgamelib/fast:
+	$(MAKE) -f chapter2/CMakeFiles/sdlgamelib.dir/build.make chapter2/CMakeFiles/sdlgamelib.dir/build
+.PHONY : sdlgamelib/fast
+
+#=============================================================================
+# Target rules for targets named gameobjlib
+
+# Build rule for target.
+gameobjlib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gameobjlib
+.PHONY : gameobjlib
+
+# fast build rule for target.
+gameobjlib/fast:
+	$(MAKE) -f chapter2/CMakeFiles/gameobjlib.dir/build.make chapter2/CMakeFiles/gameobjlib.dir/build
+.PHONY : gameobjlib/fast
 
 #=============================================================================
 # Target rules for targets named chapter2
@@ -195,6 +208,45 @@ texturelib/fast:
 	$(MAKE) -f chapter2/CMakeFiles/texturelib.dir/build.make chapter2/CMakeFiles/texturelib.dir/build
 .PHONY : texturelib/fast
 
+#=============================================================================
+# Target rules for targets named playerlib
+
+# Build rule for target.
+playerlib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 playerlib
+.PHONY : playerlib
+
+# fast build rule for target.
+playerlib/fast:
+	$(MAKE) -f chapter2/CMakeFiles/playerlib.dir/build.make chapter2/CMakeFiles/playerlib.dir/build
+.PHONY : playerlib/fast
+
+#=============================================================================
+# Target rules for targets named enemylib
+
+# Build rule for target.
+enemylib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 enemylib
+.PHONY : enemylib
+
+# fast build rule for target.
+enemylib/fast:
+	$(MAKE) -f chapter2/CMakeFiles/enemylib.dir/build.make chapter2/CMakeFiles/enemylib.dir/build
+.PHONY : enemylib/fast
+
+#=============================================================================
+# Target rules for targets named gamelib
+
+# Build rule for target.
+gamelib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gamelib
+.PHONY : gamelib
+
+# fast build rule for target.
+gamelib/fast:
+	$(MAKE) -f chapter2/CMakeFiles/gamelib.dir/build.make chapter2/CMakeFiles/gamelib.dir/build
+.PHONY : gamelib/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -207,9 +259,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
 	@echo "... install"
-	@echo "... gamelib"
+	@echo "... sdlgamelib"
+	@echo "... gameobjlib"
 	@echo "... chapter2"
 	@echo "... texturelib"
+	@echo "... playerlib"
+	@echo "... enemylib"
+	@echo "... gamelib"
 .PHONY : help
 
 

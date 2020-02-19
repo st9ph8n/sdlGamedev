@@ -8,23 +8,30 @@
 
 using namespace std;
 
+typedef Game TheGame;
 
 
-Game *g_game;
 int main()
 {
-  //initialize SDL
-  g_game = new Game();
+  std::cout << "game init attempt ..\n";
 
-  g_game->init("chapter2", 100,100,640,560,false);
+  if(TheGame::Instance()->init("chapter2", 100,100,640,560,false)){
+    std::cout << "game init success\n";
+    while(TheGame::Instance()->running()){
+      TheGame::Instance()->handleEvents();
+      TheGame::Instance()->update();
+      TheGame::Instance()->render();
 
-  while(g_game->running())
-  {
-    g_game->handleEvents();
-     g_game->update();
-    g_game->render();
+      SDL_Delay(10);
+    }
   }
-   g_game->clean();
+  else{
+    std::cout << "game init failure -" << SDL_GetError() << "\n";
+    return -1;
+  }
+
+  std::cout << "game closing ...\n";
+  TheGame::Instance()->clean();
 
   return 0;
 

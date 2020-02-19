@@ -1,0 +1,141 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "chapter2",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "chapter2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "sdlGamedev"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "chapter2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "chapter2::@3dec1e36ed4455b3392c",
+					"jsonFile" : "target-chapter2-Debug-983ec4fa4662ad3c4236.json",
+					"name" : "chapter2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "enemylib::@3dec1e36ed4455b3392c",
+					"jsonFile" : "target-enemylib-Debug-0c0596906a4cd830e030.json",
+					"name" : "enemylib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gamelib::@3dec1e36ed4455b3392c",
+					"jsonFile" : "target-gamelib-Debug-8aba0d76de7c75a8e7f4.json",
+					"name" : "gamelib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gameobjlib::@3dec1e36ed4455b3392c",
+					"jsonFile" : "target-gameobjlib-Debug-b298ff1071f2e332af29.json",
+					"name" : "gameobjlib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "playerlib::@3dec1e36ed4455b3392c",
+					"jsonFile" : "target-playerlib-Debug-9b949f8c31b5f2ea5c22.json",
+					"name" : "playerlib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sdlgamelib::@3dec1e36ed4455b3392c",
+					"jsonFile" : "target-sdlgamelib-Debug-850e88d4860b730ca777.json",
+					"name" : "sdlgamelib",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "texturelib::@3dec1e36ed4455b3392c",
+					"jsonFile" : "target-texturelib-Debug-61fef4fa734d4a6340c3.json",
+					"name" : "texturelib",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/stephen/Documents/mathprograms/sdlGamedev/build",
+		"source" : "/home/stephen/Documents/mathprograms/sdlGamedev"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

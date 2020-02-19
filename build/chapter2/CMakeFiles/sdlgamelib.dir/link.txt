@@ -1,0 +1,1 @@
+/usr/bin/g++-5 -fPIC  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g  -shared -Wl,-soname,libsdlgamelib.so -o libsdlgamelib.so CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o 

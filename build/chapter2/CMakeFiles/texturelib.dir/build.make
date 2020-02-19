@@ -60,15 +60,15 @@ include chapter2/CMakeFiles/texturelib.dir/flags.make
 chapter2/CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.o: chapter2/CMakeFiles/texturelib.dir/flags.make
 chapter2/CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.o: ../include/TextureManager.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object chapter2/CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.o"
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/TextureManager.cpp
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/TextureManager.cpp
 
 chapter2/CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.i"
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stephen/Documents/mathprograms/sdlGamedev/include/TextureManager.cpp > CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.i
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stephen/Documents/mathprograms/sdlGamedev/include/TextureManager.cpp > CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.i
 
 chapter2/CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.s"
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stephen/Documents/mathprograms/sdlGamedev/include/TextureManager.cpp -o CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.s
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stephen/Documents/mathprograms/sdlGamedev/include/TextureManager.cpp -o CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.s
 
 # Object files for target texturelib
 texturelib_OBJECTS = \

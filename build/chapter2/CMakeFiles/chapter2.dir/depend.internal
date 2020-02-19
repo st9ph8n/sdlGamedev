@@ -3,6 +3,11 @@
 
 chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o
  ../include/TextureManager.hpp
+ ../include/enemy.hpp
  ../include/game.hpp
- ../include/res_path.h
+ ../include/gameobject.hpp
+ ../include/loadParam.hpp
+ ../include/player.hpp
+ ../include/res_path.hpp
+ ../include/sdlgameobj.hpp
  /home/stephen/Documents/mathprograms/sdlGamedev/chapter2/src/main.cpp

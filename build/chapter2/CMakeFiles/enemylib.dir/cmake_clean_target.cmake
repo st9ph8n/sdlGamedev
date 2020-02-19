@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libgamelib.a"
+  "libenemylib.a"
 )
