@@ -69,6 +69,7 @@ CMAKE_BINARY_DIR = /home/stephen/Documents/mathprograms/sdlGamedev/build
 
 # Convenience name for "all" pass in the directory.
 chapter2/all: chapter2/CMakeFiles/sdlgamelib.dir/all
+chapter2/all: chapter2/CMakeFiles/vectorlib.dir/all
 chapter2/all: chapter2/CMakeFiles/gameobjlib.dir/all
 chapter2/all: chapter2/CMakeFiles/chapter2.dir/all
 chapter2/all: chapter2/CMakeFiles/texturelib.dir/all
@@ -80,6 +81,7 @@ chapter2/all: chapter2/CMakeFiles/gamelib.dir/all
 
 # Convenience name for "clean" pass in the directory.
 chapter2/clean: chapter2/CMakeFiles/sdlgamelib.dir/clean
+chapter2/clean: chapter2/CMakeFiles/vectorlib.dir/clean
 chapter2/clean: chapter2/CMakeFiles/gameobjlib.dir/clean
 chapter2/clean: chapter2/CMakeFiles/chapter2.dir/clean
 chapter2/clean: chapter2/CMakeFiles/texturelib.dir/clean
@@ -98,7 +100,7 @@ chapter2/preinstall:
 # Target rules for target chapter2/CMakeFiles/sdlgamelib.dir
 
 # All Build rule for target.
-chapter2/CMakeFiles/sdlgamelib.dir/all:
+chapter2/CMakeFiles/sdlgamelib.dir/all: chapter2/CMakeFiles/vectorlib.dir/all
 	$(MAKE) -f chapter2/CMakeFiles/sdlgamelib.dir/build.make chapter2/CMakeFiles/sdlgamelib.dir/depend
 	$(MAKE) -f chapter2/CMakeFiles/sdlgamelib.dir/build.make chapter2/CMakeFiles/sdlgamelib.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles --progress-num=11,12 "Built target sdlgamelib"
@@ -111,7 +113,7 @@ all: chapter2/CMakeFiles/sdlgamelib.dir/all
 
 # Build rule for subdir invocation for target.
 chapter2/CMakeFiles/sdlgamelib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 chapter2/CMakeFiles/sdlgamelib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles 0
 .PHONY : chapter2/CMakeFiles/sdlgamelib.dir/rule
@@ -128,6 +130,43 @@ chapter2/CMakeFiles/sdlgamelib.dir/clean:
 
 # clean rule for target.
 clean: chapter2/CMakeFiles/sdlgamelib.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target chapter2/CMakeFiles/vectorlib.dir
+
+# All Build rule for target.
+chapter2/CMakeFiles/vectorlib.dir/all:
+	$(MAKE) -f chapter2/CMakeFiles/vectorlib.dir/build.make chapter2/CMakeFiles/vectorlib.dir/depend
+	$(MAKE) -f chapter2/CMakeFiles/vectorlib.dir/build.make chapter2/CMakeFiles/vectorlib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles --progress-num=15,16 "Built target vectorlib"
+.PHONY : chapter2/CMakeFiles/vectorlib.dir/all
+
+# Include target in all.
+all: chapter2/CMakeFiles/vectorlib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+chapter2/CMakeFiles/vectorlib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 chapter2/CMakeFiles/vectorlib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles 0
+.PHONY : chapter2/CMakeFiles/vectorlib.dir/rule
+
+# Convenience name for target.
+vectorlib: chapter2/CMakeFiles/vectorlib.dir/rule
+
+.PHONY : vectorlib
+
+# clean rule for target.
+chapter2/CMakeFiles/vectorlib.dir/clean:
+	$(MAKE) -f chapter2/CMakeFiles/vectorlib.dir/build.make chapter2/CMakeFiles/vectorlib.dir/clean
+.PHONY : chapter2/CMakeFiles/vectorlib.dir/clean
+
+# clean rule for target.
+clean: chapter2/CMakeFiles/vectorlib.dir/clean
 
 .PHONY : clean
 
@@ -173,6 +212,7 @@ clean: chapter2/CMakeFiles/gameobjlib.dir/clean
 
 # All Build rule for target.
 chapter2/CMakeFiles/chapter2.dir/all: chapter2/CMakeFiles/sdlgamelib.dir/all
+chapter2/CMakeFiles/chapter2.dir/all: chapter2/CMakeFiles/vectorlib.dir/all
 chapter2/CMakeFiles/chapter2.dir/all: chapter2/CMakeFiles/texturelib.dir/all
 chapter2/CMakeFiles/chapter2.dir/all: chapter2/CMakeFiles/playerlib.dir/all
 chapter2/CMakeFiles/chapter2.dir/all: chapter2/CMakeFiles/enemylib.dir/all
@@ -189,7 +229,7 @@ all: chapter2/CMakeFiles/chapter2.dir/all
 
 # Build rule for subdir invocation for target.
 chapter2/CMakeFiles/chapter2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 chapter2/CMakeFiles/chapter2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles 0
 .PHONY : chapter2/CMakeFiles/chapter2.dir/rule
@@ -325,6 +365,7 @@ clean: chapter2/CMakeFiles/enemylib.dir/clean
 
 # All Build rule for target.
 chapter2/CMakeFiles/gamelib.dir/all: chapter2/CMakeFiles/sdlgamelib.dir/all
+chapter2/CMakeFiles/gamelib.dir/all: chapter2/CMakeFiles/vectorlib.dir/all
 chapter2/CMakeFiles/gamelib.dir/all: chapter2/CMakeFiles/texturelib.dir/all
 chapter2/CMakeFiles/gamelib.dir/all: chapter2/CMakeFiles/playerlib.dir/all
 chapter2/CMakeFiles/gamelib.dir/all: chapter2/CMakeFiles/enemylib.dir/all
@@ -340,7 +381,7 @@ all: chapter2/CMakeFiles/gamelib.dir/all
 
 # Build rule for subdir invocation for target.
 chapter2/CMakeFiles/gamelib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 chapter2/CMakeFiles/gamelib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles 0
 .PHONY : chapter2/CMakeFiles/gamelib.dir/rule

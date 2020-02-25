@@ -10,4 +10,5 @@ chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o
  ../include/player.hpp
  ../include/res_path.hpp
  ../include/sdlgameobj.hpp
+ ../include/vector.hpp
  /home/stephen/Documents/mathprograms/sdlGamedev/chapter2/src/main.cpp

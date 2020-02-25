@@ -10,4 +10,5 @@ chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/loadParam.hpp
 chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/player.hpp
 chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/res_path.hpp
 chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/sdlgameobj.hpp
+chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/vector.hpp
 

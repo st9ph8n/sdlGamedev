@@ -1,1 +1,1 @@
-/usr/bin/g++-5 -fPIC  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g  -shared -Wl,-soname,libtexturelib.so -o libtexturelib.so CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.o -lSDL2_image 
+/usr/bin/c++ -fPIC  -Wall -Wextra -pedantic -std=c++11  -shared -Wl,-soname,libtexturelib.so -o libtexturelib.so CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.o -lSDL2_image 

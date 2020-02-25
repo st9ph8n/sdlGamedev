@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC  -Wall -Wextra -pedantic -std=c++11  -shared -Wl,-soname,libsdlgame.so -o libsdlgame.so CMakeFiles/sdlgame.dir/__/include/enemy.cpp.o CMakeFiles/sdlgame.dir/__/include/game.cpp.o CMakeFiles/sdlgame.dir/__/include/gameobject.cpp.o CMakeFiles/sdlgame.dir/__/include/player.cpp.o CMakeFiles/sdlgame.dir/__/include/TextureManager.cpp.o -lSDL2_image 

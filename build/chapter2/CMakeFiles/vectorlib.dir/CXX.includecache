@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stephen/Documents/mathprograms/sdlGamedev/include/vector.cpp
+vector.hpp
+/home/stephen/Documents/mathprograms/sdlGamedev/include/vector.hpp
+
+/home/stephen/Documents/mathprograms/sdlGamedev/include/vector.hpp
+math.h
+-
+

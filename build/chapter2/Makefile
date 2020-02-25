@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/stephen/Documents/mathprograms/sdlGamedev/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -89,6 +77,18 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -170,6 +170,21 @@ sdlgamelib: chapter2/CMakeFiles/sdlgamelib.dir/rule
 sdlgamelib/fast:
 	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/sdlgamelib.dir/build.make chapter2/CMakeFiles/sdlgamelib.dir/build
 .PHONY : sdlgamelib/fast
+
+# Convenience name for target.
+chapter2/CMakeFiles/vectorlib.dir/rule:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f CMakeFiles/Makefile2 chapter2/CMakeFiles/vectorlib.dir/rule
+.PHONY : chapter2/CMakeFiles/vectorlib.dir/rule
+
+# Convenience name for target.
+vectorlib: chapter2/CMakeFiles/vectorlib.dir/rule
+
+.PHONY : vectorlib
+
+# fast build rule for target.
+vectorlib/fast:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/vectorlib.dir/build.make chapter2/CMakeFiles/vectorlib.dir/build
+.PHONY : vectorlib/fast
 
 # Convenience name for target.
 chapter2/CMakeFiles/gameobjlib.dir/rule:
@@ -423,6 +438,33 @@ __/include/sdlgameobj.cpp.s:
 	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/sdlgamelib.dir/build.make chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.s
 .PHONY : __/include/sdlgameobj.cpp.s
 
+__/include/vector.o: __/include/vector.cpp.o
+
+.PHONY : __/include/vector.o
+
+# target to build an object file
+__/include/vector.cpp.o:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/vectorlib.dir/build.make chapter2/CMakeFiles/vectorlib.dir/__/include/vector.cpp.o
+.PHONY : __/include/vector.cpp.o
+
+__/include/vector.i: __/include/vector.cpp.i
+
+.PHONY : __/include/vector.i
+
+# target to preprocess a source file
+__/include/vector.cpp.i:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/vectorlib.dir/build.make chapter2/CMakeFiles/vectorlib.dir/__/include/vector.cpp.i
+.PHONY : __/include/vector.cpp.i
+
+__/include/vector.s: __/include/vector.cpp.s
+
+.PHONY : __/include/vector.s
+
+# target to generate assembly for a file
+__/include/vector.cpp.s:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/vectorlib.dir/build.make chapter2/CMakeFiles/vectorlib.dir/__/include/vector.cpp.s
+.PHONY : __/include/vector.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -456,15 +498,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
-	@echo "... sdlgamelib"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... install/local"
+	@echo "... sdlgamelib"
+	@echo "... vectorlib"
 	@echo "... gameobjlib"
 	@echo "... chapter2"
 	@echo "... texturelib"
-	@echo "... playerlib"
 	@echo "... edit_cache"
+	@echo "... playerlib"
 	@echo "... install"
 	@echo "... enemylib"
 	@echo "... gamelib"
@@ -487,6 +530,9 @@ help:
 	@echo "... __/include/sdlgameobj.o"
 	@echo "... __/include/sdlgameobj.i"
 	@echo "... __/include/sdlgameobj.s"
+	@echo "... __/include/vector.o"
+	@echo "... __/include/vector.i"
+	@echo "... __/include/vector.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

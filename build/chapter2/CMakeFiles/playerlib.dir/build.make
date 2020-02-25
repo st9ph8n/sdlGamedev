@@ -60,15 +60,15 @@ include chapter2/CMakeFiles/playerlib.dir/flags.make
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: chapter2/CMakeFiles/playerlib.dir/flags.make
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/player.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o"
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/playerlib.dir/__/include/player.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/player.cpp
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/playerlib.dir/__/include/player.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/player.cpp
 
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/playerlib.dir/__/include/player.cpp.i"
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stephen/Documents/mathprograms/sdlGamedev/include/player.cpp > CMakeFiles/playerlib.dir/__/include/player.cpp.i
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stephen/Documents/mathprograms/sdlGamedev/include/player.cpp > CMakeFiles/playerlib.dir/__/include/player.cpp.i
 
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/playerlib.dir/__/include/player.cpp.s"
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stephen/Documents/mathprograms/sdlGamedev/include/player.cpp -o CMakeFiles/playerlib.dir/__/include/player.cpp.s
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stephen/Documents/mathprograms/sdlGamedev/include/player.cpp -o CMakeFiles/playerlib.dir/__/include/player.cpp.s
 
 # Object files for target playerlib
 playerlib_OBJECTS = \

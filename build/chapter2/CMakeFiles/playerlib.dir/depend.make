@@ -10,4 +10,5 @@ chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/player.cpp
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/player.hpp
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/res_path.hpp
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/sdlgameobj.hpp
+chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/vector.hpp
 

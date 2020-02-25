@@ -10,4 +10,5 @@ chapter2/CMakeFiles/enemylib.dir/__/include/enemy.cpp.o: ../include/loadParam.hp
 chapter2/CMakeFiles/enemylib.dir/__/include/enemy.cpp.o: ../include/player.hpp
 chapter2/CMakeFiles/enemylib.dir/__/include/enemy.cpp.o: ../include/res_path.hpp
 chapter2/CMakeFiles/enemylib.dir/__/include/enemy.cpp.o: ../include/sdlgameobj.hpp
+chapter2/CMakeFiles/enemylib.dir/__/include/enemy.cpp.o: ../include/vector.hpp
 

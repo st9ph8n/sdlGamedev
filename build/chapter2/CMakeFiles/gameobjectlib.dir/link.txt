@@ -1,1 +1,0 @@
-/usr/bin/g++-5 -fPIC  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g  -shared -Wl,-soname,libgameobjectlib.so -o libgameobjectlib.so CMakeFiles/gameobjectlib.dir/__/include/gameobject.cpp.o CMakeFiles/gameobjectlib.dir/__/include/player.cpp.o CMakeFiles/gameobjectlib.dir/__/include/enemy.cpp.o CMakeFiles/gameobjectlib.dir/__/include/sdlgameobj.cpp.o 

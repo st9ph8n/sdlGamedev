@@ -9,5 +9,6 @@ chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/loadParam.hpp
 chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/player.hpp
 chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/res_path.hpp
 chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/sdlgameobj.hpp
+chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/vector.hpp
 chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../chapter2/src/main.cpp
 

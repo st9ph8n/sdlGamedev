@@ -60,15 +60,15 @@ include chapter2/CMakeFiles/sdlgamelib.dir/flags.make
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: chapter2/CMakeFiles/sdlgamelib.dir/flags.make
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/sdlgameobj.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o"
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/sdlgameobj.cpp
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/sdlgameobj.cpp
 
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.i"
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stephen/Documents/mathprograms/sdlGamedev/include/sdlgameobj.cpp > CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.i
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stephen/Documents/mathprograms/sdlGamedev/include/sdlgameobj.cpp > CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.i
 
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.s"
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stephen/Documents/mathprograms/sdlGamedev/include/sdlgameobj.cpp -o CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.s
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stephen/Documents/mathprograms/sdlGamedev/include/sdlgameobj.cpp -o CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.s
 
 # Object files for target sdlgamelib
 sdlgamelib_OBJECTS = \
@@ -79,6 +79,7 @@ sdlgamelib_EXTERNAL_OBJECTS =
 
 chapter2/libsdlgamelib.so: chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o
 chapter2/libsdlgamelib.so: chapter2/CMakeFiles/sdlgamelib.dir/build.make
+chapter2/libsdlgamelib.so: chapter2/libvectorlib.so
 chapter2/libsdlgamelib.so: chapter2/CMakeFiles/sdlgamelib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libsdlgamelib.so"
 	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sdlgamelib.dir/link.txt --verbose=$(VERBOSE)

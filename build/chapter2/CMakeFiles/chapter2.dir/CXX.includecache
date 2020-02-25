@@ -65,6 +65,12 @@ SDL2/SDL.h
 ../include/sdlgameobj.hpp
 gameobject.hpp
 ../include/gameobject.hpp
+vector.hpp
+../include/vector.hpp
+
+../include/vector.hpp
+math.h
+-
 
 /home/stephen/Documents/mathprograms/sdlGamedev/chapter2/src/main.cpp
 iostream

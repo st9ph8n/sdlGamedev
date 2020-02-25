@@ -10,4 +10,5 @@ chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/playe
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/res_path.hpp
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/sdlgameobj.cpp
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/sdlgameobj.hpp
+chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/vector.hpp
 

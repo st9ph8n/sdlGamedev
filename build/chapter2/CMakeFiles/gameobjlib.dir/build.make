@@ -60,15 +60,15 @@ include chapter2/CMakeFiles/gameobjlib.dir/flags.make
 chapter2/CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.o: chapter2/CMakeFiles/gameobjlib.dir/flags.make
 chapter2/CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.o: ../include/gameobject.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object chapter2/CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.o"
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/gameobject.cpp
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/gameobject.cpp
 
 chapter2/CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.i"
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stephen/Documents/mathprograms/sdlGamedev/include/gameobject.cpp > CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.i
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/stephen/Documents/mathprograms/sdlGamedev/include/gameobject.cpp > CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.i
 
 chapter2/CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.s"
-	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/g++-5 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stephen/Documents/mathprograms/sdlGamedev/include/gameobject.cpp -o CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.s
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/stephen/Documents/mathprograms/sdlGamedev/include/gameobject.cpp -o CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.s
 
 # Object files for target gameobjlib
 gameobjlib_OBJECTS = \

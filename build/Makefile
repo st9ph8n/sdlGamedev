@@ -170,6 +170,19 @@ sdlgamelib/fast:
 .PHONY : sdlgamelib/fast
 
 #=============================================================================
+# Target rules for targets named vectorlib
+
+# Build rule for target.
+vectorlib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vectorlib
+.PHONY : vectorlib
+
+# fast build rule for target.
+vectorlib/fast:
+	$(MAKE) -f chapter2/CMakeFiles/vectorlib.dir/build.make chapter2/CMakeFiles/vectorlib.dir/build
+.PHONY : vectorlib/fast
+
+#=============================================================================
 # Target rules for targets named gameobjlib
 
 # Build rule for target.
@@ -260,6 +273,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... install"
 	@echo "... sdlgamelib"
+	@echo "... vectorlib"
 	@echo "... gameobjlib"
 	@echo "... chapter2"
 	@echo "... texturelib"
