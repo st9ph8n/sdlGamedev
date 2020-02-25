@@ -1,2 +1,2 @@
 # sdlGamedev
-# to build, cmake .. , the cmake --build .
+# to build, cmake .. , then cmake --build .
