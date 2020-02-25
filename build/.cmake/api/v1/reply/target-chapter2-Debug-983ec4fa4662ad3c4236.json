@@ -1,0 +1,170 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "bin/chapter2"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"chapter2/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 62,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 36,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 37,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g  "
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "/usr/local/include/SDL2"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/stephen/Documents/mathprograms/sdlGamedev/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "sdlgamelib::@3dec1e36ed4455b3392c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "texturelib::@3dec1e36ed4455b3392c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "playerlib::@3dec1e36ed4455b3392c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "enemylib::@3dec1e36ed4455b3392c"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "gamelib::@3dec1e36ed4455b3392c"
+		}
+	],
+	"id" : "chapter2::@3dec1e36ed4455b3392c",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "/home/stephen/Documents/mathprograms/sdlGamedev/bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/usr/local/lib:/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2: /usr/local/lib/libSDL2main.a /usr/local/lib/libSDL2.so -lpthread libgamelib.so libplayerlib.so libenemylib.so libtexturelib.so -lSDL2_image libsdlgamelib.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "chapter2",
+	"nameOnDisk" : "chapter2",
+	"paths" : 
+	{
+		"build" : "chapter2",
+		"source" : "chapter2"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "chapter2/src/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

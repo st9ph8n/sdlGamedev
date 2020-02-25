@@ -3,6 +3,12 @@
 
 chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o
  /home/stephen/Documents/mathprograms/sdlGamedev/include/TextureManager.hpp
+ /home/stephen/Documents/mathprograms/sdlGamedev/include/enemy.hpp
  /home/stephen/Documents/mathprograms/sdlGamedev/include/game.cpp
  /home/stephen/Documents/mathprograms/sdlGamedev/include/game.hpp
- /home/stephen/Documents/mathprograms/sdlGamedev/include/res_path.h
+ /home/stephen/Documents/mathprograms/sdlGamedev/include/gameobject.hpp
+ /home/stephen/Documents/mathprograms/sdlGamedev/include/loadParam.hpp
+ /home/stephen/Documents/mathprograms/sdlGamedev/include/player.hpp
+ /home/stephen/Documents/mathprograms/sdlGamedev/include/res_path.hpp
+ /home/stephen/Documents/mathprograms/sdlGamedev/include/sdlgameobj.hpp
+ /home/stephen/Documents/mathprograms/sdlGamedev/include/vector.hpp

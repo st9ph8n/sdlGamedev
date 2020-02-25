@@ -82,7 +82,11 @@ bin/chapter2: chapter2/CMakeFiles/chapter2.dir/build.make
 bin/chapter2: /usr/local/lib/libSDL2main.a
 bin/chapter2: /usr/local/lib/libSDL2.so
 bin/chapter2: chapter2/libgamelib.so
+bin/chapter2: chapter2/libplayerlib.so
+bin/chapter2: chapter2/libenemylib.so
 bin/chapter2: chapter2/libtexturelib.so
+bin/chapter2: chapter2/libsdlgamelib.so
+bin/chapter2: chapter2/libvectorlib.so
 bin/chapter2: chapter2/CMakeFiles/chapter2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/chapter2"
 	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/chapter2.dir/link.txt --verbose=$(VERBOSE)

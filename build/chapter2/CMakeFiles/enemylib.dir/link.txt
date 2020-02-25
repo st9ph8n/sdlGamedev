@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wall -Wextra -pedantic -std=c++11  -shared -Wl,-soname,libenemylib.so -o libenemylib.so CMakeFiles/enemylib.dir/__/include/enemy.cpp.o 

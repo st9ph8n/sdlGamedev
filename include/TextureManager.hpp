@@ -4,7 +4,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include <map>
-#include "res_path.h"
+#include "res_path.hpp"
 
 class TextureManager
 {

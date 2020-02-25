@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2",
+  "command": "/usr/bin/g++-5  -Dsdlgamelib_EXPORTS -I/usr/local/include/SDL2 -I/home/stephen/Documents/mathprograms/sdlGamedev/include   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -fPIC   -o CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/sdlgameobj.cpp",
+  "file": "/home/stephen/Documents/mathprograms/sdlGamedev/include/sdlgameobj.cpp"
+},
+{
+  "directory": "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2",
+  "command": "/usr/bin/g++-5  -Dgameobjlib_EXPORTS -I/usr/local/include/SDL2 -I/home/stephen/Documents/mathprograms/sdlGamedev/include   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -fPIC   -o CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/gameobject.cpp",
+  "file": "/home/stephen/Documents/mathprograms/sdlGamedev/include/gameobject.cpp"
+},
+{
+  "directory": "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2",
+  "command": "/usr/bin/g++-5   -I/usr/local/include/SDL2 -I/home/stephen/Documents/mathprograms/sdlGamedev/include   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g   -o CMakeFiles/chapter2.dir/src/main.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/chapter2/src/main.cpp",
+  "file": "/home/stephen/Documents/mathprograms/sdlGamedev/chapter2/src/main.cpp"
+},
+{
+  "directory": "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2",
+  "command": "/usr/bin/g++-5  -Dtexturelib_EXPORTS -I/usr/local/include/SDL2 -I/home/stephen/Documents/mathprograms/sdlGamedev/include   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -fPIC   -o CMakeFiles/texturelib.dir/__/include/TextureManager.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/TextureManager.cpp",
+  "file": "/home/stephen/Documents/mathprograms/sdlGamedev/include/TextureManager.cpp"
+},
+{
+  "directory": "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2",
+  "command": "/usr/bin/g++-5  -Dplayerlib_EXPORTS -I/usr/local/include/SDL2 -I/home/stephen/Documents/mathprograms/sdlGamedev/include   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -fPIC   -o CMakeFiles/playerlib.dir/__/include/player.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/player.cpp",
+  "file": "/home/stephen/Documents/mathprograms/sdlGamedev/include/player.cpp"
+},
+{
+  "directory": "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2",
+  "command": "/usr/bin/g++-5  -Denemylib_EXPORTS -I/usr/local/include/SDL2 -I/home/stephen/Documents/mathprograms/sdlGamedev/include   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -fPIC   -o CMakeFiles/enemylib.dir/__/include/enemy.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/enemy.cpp",
+  "file": "/home/stephen/Documents/mathprograms/sdlGamedev/include/enemy.cpp"
+},
+{
+  "directory": "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2",
+  "command": "/usr/bin/g++-5  -Dgamelib_EXPORTS -I/usr/local/include/SDL2 -I/home/stephen/Documents/mathprograms/sdlGamedev/include   -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g -fPIC   -o CMakeFiles/gamelib.dir/__/include/game.cpp.o -c /home/stephen/Documents/mathprograms/sdlGamedev/include/game.cpp",
+  "file": "/home/stephen/Documents/mathprograms/sdlGamedev/include/game.cpp"
+}
+]

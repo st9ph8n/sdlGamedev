@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 3.12.0)
+
+cmake_minimum_required(VERSION 3.14.0)
 project(sdlGamedev VERSION 1.0.0)
 
 # Use our modified  FindSDL2* modules
