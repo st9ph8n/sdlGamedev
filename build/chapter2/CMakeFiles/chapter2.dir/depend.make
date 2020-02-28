@@ -5,6 +5,7 @@ chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/TextureManager.hpp
 chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/enemy.hpp
 chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/game.hpp
 chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/gameobject.hpp
+chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/inputhandler.hpp
 chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/loadParam.hpp
 chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/player.hpp
 chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o: ../include/res_path.hpp

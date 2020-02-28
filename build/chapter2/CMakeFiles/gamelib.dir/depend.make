@@ -6,6 +6,7 @@ chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/enemy.hpp
 chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/game.cpp
 chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/game.hpp
 chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/gameobject.hpp
+chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/inputhandler.hpp
 chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/loadParam.hpp
 chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/player.hpp
 chapter2/CMakeFiles/gamelib.dir/__/include/game.cpp.o: ../include/res_path.hpp

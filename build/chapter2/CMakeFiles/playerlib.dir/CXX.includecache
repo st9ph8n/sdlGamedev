@@ -33,6 +33,8 @@ enemy.hpp
 /home/stephen/Documents/mathprograms/sdlGamedev/include/enemy.hpp
 gameobject.hpp
 /home/stephen/Documents/mathprograms/sdlGamedev/include/gameobject.hpp
+inputhandler.hpp
+/home/stephen/Documents/mathprograms/sdlGamedev/include/inputhandler.hpp
 vector
 -
 
@@ -45,6 +47,14 @@ loadParam.hpp
 /home/stephen/Documents/mathprograms/sdlGamedev/include/loadParam.hpp
 TextureManager.hpp
 /home/stephen/Documents/mathprograms/sdlGamedev/include/TextureManager.hpp
+
+/home/stephen/Documents/mathprograms/sdlGamedev/include/inputhandler.hpp
+SDL2/SDL.h
+/home/stephen/Documents/mathprograms/sdlGamedev/include/SDL2/SDL.h
+vector
+-
+game.hpp
+/home/stephen/Documents/mathprograms/sdlGamedev/include/game.hpp
 
 /home/stephen/Documents/mathprograms/sdlGamedev/include/loadParam.hpp
 iostream

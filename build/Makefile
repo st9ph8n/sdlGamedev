@@ -260,6 +260,19 @@ gamelib/fast:
 	$(MAKE) -f chapter2/CMakeFiles/gamelib.dir/build.make chapter2/CMakeFiles/gamelib.dir/build
 .PHONY : gamelib/fast
 
+#=============================================================================
+# Target rules for targets named inputhandlerlib
+
+# Build rule for target.
+inputhandlerlib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 inputhandlerlib
+.PHONY : inputhandlerlib
+
+# fast build rule for target.
+inputhandlerlib/fast:
+	$(MAKE) -f chapter2/CMakeFiles/inputhandlerlib.dir/build.make chapter2/CMakeFiles/inputhandlerlib.dir/build
+.PHONY : inputhandlerlib/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -280,6 +293,7 @@ help:
 	@echo "... playerlib"
 	@echo "... enemylib"
 	@echo "... gamelib"
+	@echo "... inputhandlerlib"
 .PHONY : help
 
 

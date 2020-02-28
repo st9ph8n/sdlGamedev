@@ -78,6 +78,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -112,17 +123,6 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/local/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -276,6 +276,21 @@ gamelib/fast:
 	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/gamelib.dir/build.make chapter2/CMakeFiles/gamelib.dir/build
 .PHONY : gamelib/fast
 
+# Convenience name for target.
+chapter2/CMakeFiles/inputhandlerlib.dir/rule:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f CMakeFiles/Makefile2 chapter2/CMakeFiles/inputhandlerlib.dir/rule
+.PHONY : chapter2/CMakeFiles/inputhandlerlib.dir/rule
+
+# Convenience name for target.
+inputhandlerlib: chapter2/CMakeFiles/inputhandlerlib.dir/rule
+
+.PHONY : inputhandlerlib
+
+# fast build rule for target.
+inputhandlerlib/fast:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/inputhandlerlib.dir/build.make chapter2/CMakeFiles/inputhandlerlib.dir/build
+.PHONY : inputhandlerlib/fast
+
 __/include/TextureManager.o: __/include/TextureManager.cpp.o
 
 .PHONY : __/include/TextureManager.o
@@ -383,6 +398,33 @@ __/include/gameobject.s: __/include/gameobject.cpp.s
 __/include/gameobject.cpp.s:
 	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/gameobjlib.dir/build.make chapter2/CMakeFiles/gameobjlib.dir/__/include/gameobject.cpp.s
 .PHONY : __/include/gameobject.cpp.s
+
+__/include/inputhandler.o: __/include/inputhandler.cpp.o
+
+.PHONY : __/include/inputhandler.o
+
+# target to build an object file
+__/include/inputhandler.cpp.o:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/inputhandlerlib.dir/build.make chapter2/CMakeFiles/inputhandlerlib.dir/__/include/inputhandler.cpp.o
+.PHONY : __/include/inputhandler.cpp.o
+
+__/include/inputhandler.i: __/include/inputhandler.cpp.i
+
+.PHONY : __/include/inputhandler.i
+
+# target to preprocess a source file
+__/include/inputhandler.cpp.i:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/inputhandlerlib.dir/build.make chapter2/CMakeFiles/inputhandlerlib.dir/__/include/inputhandler.cpp.i
+.PHONY : __/include/inputhandler.cpp.i
+
+__/include/inputhandler.s: __/include/inputhandler.cpp.s
+
+.PHONY : __/include/inputhandler.s
+
+# target to generate assembly for a file
+__/include/inputhandler.cpp.s:
+	cd /home/stephen/Documents/mathprograms/sdlGamedev/build && $(MAKE) -f chapter2/CMakeFiles/inputhandlerlib.dir/build.make chapter2/CMakeFiles/inputhandlerlib.dir/__/include/inputhandler.cpp.s
+.PHONY : __/include/inputhandler.cpp.s
 
 __/include/player.o: __/include/player.cpp.o
 
@@ -500,6 +542,7 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... rebuild_cache"
 	@echo "... install/local"
 	@echo "... sdlgamelib"
 	@echo "... vectorlib"
@@ -511,7 +554,7 @@ help:
 	@echo "... install"
 	@echo "... enemylib"
 	@echo "... gamelib"
-	@echo "... rebuild_cache"
+	@echo "... inputhandlerlib"
 	@echo "... __/include/TextureManager.o"
 	@echo "... __/include/TextureManager.i"
 	@echo "... __/include/TextureManager.s"
@@ -524,6 +567,9 @@ help:
 	@echo "... __/include/gameobject.o"
 	@echo "... __/include/gameobject.i"
 	@echo "... __/include/gameobject.s"
+	@echo "... __/include/inputhandler.o"
+	@echo "... __/include/inputhandler.i"
+	@echo "... __/include/inputhandler.s"
 	@echo "... __/include/player.o"
 	@echo "... __/include/player.i"
 	@echo "... __/include/player.s"
