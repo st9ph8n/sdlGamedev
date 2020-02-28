@@ -5,6 +5,7 @@ chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/Textu
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/enemy.hpp
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/game.hpp
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/gameobject.hpp
+chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/inputhandler.hpp
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/loadParam.hpp
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/player.hpp
 chapter2/CMakeFiles/sdlgamelib.dir/__/include/sdlgameobj.cpp.o: ../include/res_path.hpp

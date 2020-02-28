@@ -6,6 +6,7 @@ chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o
  ../include/enemy.hpp
  ../include/game.hpp
  ../include/gameobject.hpp
+ ../include/inputhandler.hpp
  ../include/loadParam.hpp
  ../include/player.hpp
  ../include/res_path.hpp

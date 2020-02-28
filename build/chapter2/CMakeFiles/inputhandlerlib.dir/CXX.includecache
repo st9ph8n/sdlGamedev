@@ -16,12 +16,6 @@ map
 res_path.hpp
 /home/stephen/Documents/mathprograms/sdlGamedev/include/res_path.hpp
 
-/home/stephen/Documents/mathprograms/sdlGamedev/include/enemy.cpp
-enemy.hpp
-/home/stephen/Documents/mathprograms/sdlGamedev/include/enemy.hpp
-game.hpp
-/home/stephen/Documents/mathprograms/sdlGamedev/include/game.hpp
-
 /home/stephen/Documents/mathprograms/sdlGamedev/include/enemy.hpp
 sdlgameobj.hpp
 /home/stephen/Documents/mathprograms/sdlGamedev/include/sdlgameobj.hpp
@@ -53,6 +47,10 @@ loadParam.hpp
 /home/stephen/Documents/mathprograms/sdlGamedev/include/loadParam.hpp
 TextureManager.hpp
 /home/stephen/Documents/mathprograms/sdlGamedev/include/TextureManager.hpp
+
+/home/stephen/Documents/mathprograms/sdlGamedev/include/inputhandler.cpp
+inputhandler.hpp
+/home/stephen/Documents/mathprograms/sdlGamedev/include/inputhandler.hpp
 
 /home/stephen/Documents/mathprograms/sdlGamedev/include/inputhandler.hpp
 SDL2/SDL.h

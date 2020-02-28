@@ -5,6 +5,7 @@ chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/TextureMan
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/enemy.hpp
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/game.hpp
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/gameobject.hpp
+chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/inputhandler.hpp
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/loadParam.hpp
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/player.cpp
 chapter2/CMakeFiles/playerlib.dir/__/include/player.cpp.o: ../include/player.hpp

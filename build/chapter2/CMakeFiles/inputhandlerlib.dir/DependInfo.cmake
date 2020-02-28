@@ -4,9 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/stephen/Documents/mathprograms/sdlGamedev/chapter2/src/main.cpp" "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2/CMakeFiles/chapter2.dir/src/main.cpp.o"
+  "/home/stephen/Documents/mathprograms/sdlGamedev/include/inputhandler.cpp" "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2/CMakeFiles/inputhandlerlib.dir/__/include/inputhandler.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "inputhandlerlib_EXPORTS"
+  )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
@@ -16,7 +21,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2/CMakeFiles/gamelib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

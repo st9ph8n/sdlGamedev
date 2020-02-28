@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -g  -shared -Wl,-soname,libinputhandlerlib.so -o libinputhandlerlib.so CMakeFiles/inputhandlerlib.dir/__/include/inputhandler.cpp.o 

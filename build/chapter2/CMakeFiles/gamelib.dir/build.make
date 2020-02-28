@@ -83,7 +83,7 @@ chapter2/libgamelib.so: chapter2/libplayerlib.so
 chapter2/libgamelib.so: chapter2/libenemylib.so
 chapter2/libgamelib.so: chapter2/libtexturelib.so
 chapter2/libgamelib.so: chapter2/libsdlgamelib.so
-chapter2/libgamelib.so: chapter2/libvectorlib.so
+chapter2/libgamelib.so: chapter2/libinputhandlerlib.so
 chapter2/libgamelib.so: chapter2/CMakeFiles/gamelib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libgamelib.so"
 	cd /home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gamelib.dir/link.txt --verbose=$(VERBOSE)
