@@ -213,13 +213,7 @@ clean: chapter2/CMakeFiles/gameobjlib.dir/clean
 # Target rules for target chapter2/CMakeFiles/chapter2.dir
 
 # All Build rule for target.
-chapter2/CMakeFiles/chapter2.dir/all: chapter2/CMakeFiles/sdlgamelib.dir/all
-chapter2/CMakeFiles/chapter2.dir/all: chapter2/CMakeFiles/vectorlib.dir/all
-chapter2/CMakeFiles/chapter2.dir/all: chapter2/CMakeFiles/texturelib.dir/all
-chapter2/CMakeFiles/chapter2.dir/all: chapter2/CMakeFiles/playerlib.dir/all
-chapter2/CMakeFiles/chapter2.dir/all: chapter2/CMakeFiles/enemylib.dir/all
 chapter2/CMakeFiles/chapter2.dir/all: chapter2/CMakeFiles/gamelib.dir/all
-chapter2/CMakeFiles/chapter2.dir/all: chapter2/CMakeFiles/inputhandlerlib.dir/all
 	$(MAKE) -f chapter2/CMakeFiles/chapter2.dir/build.make chapter2/CMakeFiles/chapter2.dir/depend
 	$(MAKE) -f chapter2/CMakeFiles/chapter2.dir/build.make chapter2/CMakeFiles/chapter2.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/stephen/Documents/mathprograms/sdlGamedev/build/CMakeFiles --progress-num=1,2 "Built target chapter2"
@@ -368,7 +362,6 @@ clean: chapter2/CMakeFiles/enemylib.dir/clean
 
 # All Build rule for target.
 chapter2/CMakeFiles/gamelib.dir/all: chapter2/CMakeFiles/sdlgamelib.dir/all
-chapter2/CMakeFiles/gamelib.dir/all: chapter2/CMakeFiles/vectorlib.dir/all
 chapter2/CMakeFiles/gamelib.dir/all: chapter2/CMakeFiles/texturelib.dir/all
 chapter2/CMakeFiles/gamelib.dir/all: chapter2/CMakeFiles/playerlib.dir/all
 chapter2/CMakeFiles/gamelib.dir/all: chapter2/CMakeFiles/enemylib.dir/all

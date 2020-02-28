@@ -17,12 +17,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2/CMakeFiles/gamelib.dir/DependInfo.cmake"
-  "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2/CMakeFiles/playerlib.dir/DependInfo.cmake"
-  "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2/CMakeFiles/enemylib.dir/DependInfo.cmake"
-  "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2/CMakeFiles/texturelib.dir/DependInfo.cmake"
-  "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2/CMakeFiles/sdlgamelib.dir/DependInfo.cmake"
-  "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2/CMakeFiles/vectorlib.dir/DependInfo.cmake"
-  "/home/stephen/Documents/mathprograms/sdlGamedev/build/chapter2/CMakeFiles/inputhandlerlib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
